@@ -1,0 +1,13 @@
+<ion-modal-view>
+<ion-header-bar>
+    <h1 class="title">Busqueda</h1>
+  </ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="item in address" menu-close ng-click="selectAddr(item)">
+      {{item.formatted_address}}
+      </ion-item>
+    </ion-list>
+    <button ng-click="cancelarBusqueda()" class="button button-full button-stable bold">Cancelar</button>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,199 @@
+#login #logo img {
+  width: 90%;
+  margin: 5%;
+  margin-top: 30%;
+}
+.ch-item {
+	width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: default;
+    background-color: #2795ee;
+    float: left;
+    /*left: calc(50% - 10px);
+    top: calc(50% - 10px);*/
+    pointer-events: none;
+  	animation:fade 2s infinite;
+}
+.ch-middle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    border: 2px solid #2795ee;
+    cursor: default;
+    background-color: white;
+}
+.ch-container{
+  	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+}
+@-webkit-keyframes fade {
+    0% { opacity: 1; transform:scale(0)}
+    50% { opacity: 0;transform:scale(10); }
+    100% { opacity: 0; transform:scale(0)}
+}
+
+/* Empty. Add your own CSS if you like */
+.google-button{
+      background-image: url(../img/btn_googleplus.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 35%;
+  background-color: transparent !important;
+  color:#fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scroll {
+  height: 100%;
+}
+#login .scroll-content {
+	background-size: 100%;
+}
+#login.fondo1 .scroll-content{
+  background-image: url("../img/Fondo1.jpg");
+}
+#login.fondo2 .scroll-content{
+  background-image: url("../img/Fondo2.jpg");
+}
+#login.fondo3 .scroll-content{
+  background-image: url("../img/Fondo3.jpg");
+}
+#login.fondo4 .scroll-content{
+  background-image: url("../img/Fondo4.jpg");
+}
+
+.expand-btn {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	border-radius: 50%;
+	width: 56px;
+	height: 56px;
+	transition: 0.2s;
+}
+.btn-0{
+	z-index: 20;
+	box-shadow: 0px 3px 10px grey;
+}
+.btn-1{
+	z-index: 19;
+}
+.btn-2{
+	z-index: 18;	
+}
+.btn-2 span{
+	display: none;
+}
+.btn-3{
+	z-index: 17;
+}
+.showOpciones {
+	box-shadow: 0px 3px 10px grey;
+}
+.btn-1.showOpciones {
+	right: 85px;
+}
+.btn-2.showOpciones {
+	right: 155px;
+	width: 82px;
+    border-radius: 30px;
+}
+.btn-2.showOpciones span{
+	display: block;
+}
+.btn-3.showOpciones {
+	right: 252px;
+}
+.dia{
+	padding: 4px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color:red;
+}
+.dia.abierto,.tipoVehiculo.active {
+	color: #16E020;
+	border-color: #16E020;
+}
+.rating {
+	font-size: 25px;
+    color: gold;
+}
+.big-rating .rating {
+	font-size: 49px;
+}
+.puntaje {
+	padding: 5px 10px;
+    color: white;
+    background-color: gold;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.slide-in-right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+
+.slide-in-right.ng-enter,
+.slide-in-right > .ng-enter {
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms; }
+
+.slide-in-right.ng-enter-active,
+.slide-in-right > .ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slide-in-right.ng-leave,
+.slide-in-right > .ng-leave {
+  transition: all ease-in-out 250ms; 
+}
+.logo-payphone {
+	width: 100%;
+}
+qrcode img {
+	margin:auto;
+	margin-top: 50px;
+}
+.detalleParqueo .item {
+	border: none;
+	text-align: center;
+	padding: 5px;
+}
+.detalleParqueo .item strong {
+	font-size: 20px;
+}
+.tipoVehiculo {
+	border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 80px;
+    margin: 10px;
+    color: lightgray;
+}
+.tipoVehiculo p {
+	margin: 0;
+	line-height: 70px;
+	font-size: 25px;
+}
+.reserva .item-select::after{
+	display: none;
+}
+.reserva select {
+	min-width: 90px;
+    line-height: 70px;
+    height: 70px;
+    text-align-last: center;
+    font-size: 36px;
+    color: #16e020;
+    margin: 0 calc( 50% - 45px);
+    position: relative;
+    padding: 0;
+}
